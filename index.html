@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-glyphicons.css">
+	<style>
+		body {
+			font-family: "Helvetica Neue",Helvetica,Arial, 微软雅黑;
+			padding-top: 70px;
+		}
+
+		h1, h2, h3, p, div, input {
+			font-family: "Helvetica Neue",Helvetica,Arial, 微软雅黑;
+		}
+		h2 small {
+			font-size: 85%;
+			color: inherit;
+			margin-left: 10px;
+		}
+
+		.pc-navbar {
+			background-color: #4386F4;
+		}
+
+		.pc-navbar .navbar-brand{
+			color: white;
+		}
+		.pc-navbar .navbar-nav > li > a {
+			color: #CCDEFC;
+		}
+		.pc-navbar .navbar-nav > .active > a, .pc-navbar .navbar-nav > .active > a:hover {
+			background-color: #1D72F9;
+			color: white;
+		}
+		.glyphicon {
+			position: relative;
+			margin-right: 3px;
+			top: 2px;
+		}
+
+		.content-box {
+			/*border: 1px solid silver;*/
+			padding: 1px 20px 20px;
+			border-radius: 6px;
+			box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 40px 8px rgba(0, 0, 0, 0.25);
+			margin-bottom: 40px;
+		}
+
+		.content-box h2 {
+			background: -webkit-linear-gradient(top, rgba(107,107,107,1) 0%,rgba(44,44,44,1) 60%,rgba(0,0,0,1) 100%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+			-webkit-box-reflect: below -7px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.2, transparent), to(rgba(3,3,3,.1)));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin-bottom: 15px;
+		}
+
+		.ca-item {
+			background-color: #383535;
+			height: 450px;
+			width: 100%;
+		}
+
+		.container {
+			width: 940px;
+		}
+
+		.ca-item .carousel-caption {
+			transition: all ease 0.5s;
+			left: 0;
+			right: 0;
+			bottom: -100%;
+			background-color: rgba(0,0,0, 0.3);
+			padding-bottom: 50px;
+		}
+
+		.ca-item:hover .carousel-caption {
+			bottom: 0;
+		}
+
+	</style>
+	<title>Playcoin's Homepage</title>
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse pc-navbar ">
+	<div class="container">
+		<a href="" class="navbar-brand">Playcoin的个人主页</a>
+		<ul class="nav navbar-nav">
+			<li><a href="#"><span class="glyphicon glyphicon-glass"></span>专业特长</a></li>
+			<li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase"></span>项目经验</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="container">
+	<div class="content-box">
+		<h2>个人信息<small>Personal Info</small></h2>
+		<div class="row">
+			<div class="col-lg-6">
+				<ul>
+					<li>基本信息</li>
+					<li>专业技能</li>
+					<li>兴趣爱好</li>
+				</ul>
+			</div>
+			<div class="col-lg-6"><img src="labelwall.png" alt="" width="435"></div>
+		</div>
+	</div>
+	<div class="content-box">
+		<h2>作品集<small>Products</small></h2>
+		<div class="carousel slide " id="carousel-example-captions">
+	        <ol class="carousel-indicators">
+	          <li class="active" data-slide-to="0" data-target="#carousel-example-captions"></li>
+	          <li data-slide-to="1" data-target="#carousel-example-captions"></li>
+	          <li data-slide-to="2" data-target="#carousel-example-captions"></li>
+	        </ol>
+	        <div class="carousel-inner">
+	          <div class="item ca-item active">
+	          	<img src="pic1.png" alt="">
+	            <div class="carousel-caption">
+	              <h3>First slide label</h3>
+	              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+	            </div>
+	          </div>
+	          <div class="item ca-item">
+	          	<img src="pic2.png" alt="">
+	            <div class="carousel-caption">
+	              <h3>Second slide label</h3>
+	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	            </div>
+	          </div>
+	          <div class="item ca-item">
+	            <div class="carousel-caption">
+	              <h3>Third slide label</h3>
+	              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+	            </div>
+	          </div>
+	        </div>
+	        <a data-slide="prev" href="#carousel-example-captions" class="left carousel-control">
+	          <span class="icon-prev"></span>
+	        </a>
+	        <a data-slide="next" href="#carousel-example-captions" class="right carousel-control">
+	          <span class="icon-next"></span>
+	        </a>
+	    </div>
+	</div>
+	
+	<div class="content-box">
+		<h2>关注我<small>Focus on Me</small></h2>
+		<div class="row">
+			<div class="col-lg-6">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$('.carousel').carousel();	
+</script>
+</body>
+</html>
