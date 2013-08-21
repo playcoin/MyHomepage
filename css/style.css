@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 body {
-	font-family: "Helvetica Neue",Helvetica,Arial, 微软雅黑;
+	font-family: "Helvetica Neue",Helvetica, 微软雅黑;
 	background: url('../images/mooning.png') #EBEBEB;
 }
 
 h1, h2, h3, h4, h5, p, div, input {
-	font-family: "Helvetica Neue",Helvetica,Arial, 微软雅黑;
+	font-family: "Helvetica Neue",Helvetica, 微软雅黑;
 }
 h2 small {
 	font-size: 85%;
@@ -28,12 +28,13 @@ h2 small {
 	color: white;
 }
 .pc-navbar .navbar-nav > li > a {
-	color: #EBEBEB;
+	color: #D1D1D1;
 }
 .pc-navbar .navbar-nav > .active > a, .pc-navbar .navbar-nav > .active > a:hover {
 	background-color: black;
 	color: white;
 }
+
 .glyphicon {
 	position: relative;
 	margin-right: 3px;
@@ -56,10 +57,10 @@ h2 small {
 }
 
 .content-box h2 {
-	background: -webkit-linear-gradient(top, rgba(107,107,107,1) 0%,rgba(44,44,44,1) 60%,rgba(0,0,0,1) 100%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
-	-webkit-box-reflect: below -7px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.2, transparent), to(rgba(3,3,3,.1)));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	/*background: -webkit-linear-gradient(top, rgba(107,107,107,1) 0%,rgba(44,44,44,1) 60%,rgba(0,0,0,1) 100%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */*/
+	/*-webkit-box-reflect: below -7px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.2, transparent), to(rgba(3,3,3,.1)));*/
+	/*-webkit-background-clip: text;*/
+	/*-webkit-text-fill-color: transparent;*/
 	margin-bottom: 15px;
 	margin-top: 0;
 	color: #383838;
@@ -129,7 +130,7 @@ h2 small {
 	top: 0;
 	left: 0;
 	background-color: rgba(0,0,0, 0.0);
-	color: #343434;
+	color: #0A0A0A;
 	text-decoration: none;
 	opacity: 0;
 	display: block;
@@ -138,5 +139,9 @@ h2 small {
 
 .product_thum:hover .product_mask {
 	opacity: 1;
-	background-color: rgba(0,0,0, 0.5);
+	background-color: rgba(0,0,0, 0.3);
+}
+
+.show-grid {
+	margin-bottom: 20px;
 }
