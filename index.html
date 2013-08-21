@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-glyphicons.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Playcoin's Homepage</title>
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse pc-navbar ">
+	<div class="container">
+		<a href="" class="navbar-brand">Playcoin的个人主页</a>
+		<ul class="nav navbar-nav">
+			<li><a href="#"><span class="glyphicon glyphicon-glass"></span>简介</a></li>
+			<li class="active"><a href="#"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>联系</a></li>
+		</ul>
+	</div>
+</div>
+<div id="main">
+	<div  class="container">
+		<div class="content-box">
+			<div class="row">
+				<div class="col-lg-4">
+					<img src="images/photo_s.png" alt="" width="250px">
+				</div>
+				<div class="col-lg-8" id="personal-info">
+					<h2>彭程<small>Peng Cheng</small></h2>
+					<p>
+						我是一名东南大学计算机学院研究生，也是一名Web开发工程师。
+						<br>
+						欢迎访问我的个人主页！
+					</p>
+					<hr />
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="icon-item">
+								<img src="images/email.png" alt="" height="19px">
+								<a href="mailto:seuplaycoin@gmail.com">seuplaycoin@gmail.com</a>
+							</div>
+							<div class="icon-item">
+								<img src="images/sinaweibo_b.png" alt="" height="19px">
+								<a href="http://weibo.com/u/2000335193">@playcoin</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="icon-item">
+								<img src="images/gitlogo.png" alt="" height="20px">
+								<a href="https://github.com/playcoin">https://github.com/playcoin</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-box">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>简介<small>Profile</small></h2>
+					<ul class="list-unstyled">
+						<li>
+							<h4>专业技能</h4>
+							<ul>
+								<li>精通HTML+CSS+Javascript，熟练使用jQuery</li>
+								<li>关注前端技术发展，如HTML5、响应式设计</li>
+								<li>熟悉 Struts 2 (Java)、Django (Python) 等Web框架，具备快速开发Web项目能力</li>
+								<!-- <li>熟悉常用算法和数据结构，并能在实践中灵活运用</li> -->
+								<li>熟悉常用的机器学习算法，关注深度学习技术的发展</li>
+								<li>熟悉自然语言处理领域</li>
+							</ul>
+						</li>
+						<li>
+							<h4>兴趣爱好</h4>
+							<ul>
+								<li>篮球、网球、DOTA 2、美剧</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6"><img src="images/lw3.png" alt="" width="400"></div>
+			</div>
+		</div>
+		<div class="content-box">
+			<h2>作品集<small>Products</small></h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="images/monitor_thum_s.png" alt="">
+						<a class="product_mask" href="#model_monitor" data-toggle="modal" data-target="#model_monitor">
+							<span class="glyphicon glyphicon-eye-open"></span>
+						</a>
+					</div>
+					<div class="modal fade" id="model_monitor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					          <h4 class="modal-title">X-monitor</h4>
+					          
+					        </div>
+					        <div class="modal-body">
+					        	<div class="carousel slide" id="carousel-monitor-captions">
+						        <ol class="carousel-indicators">
+						          <li class="active" data-slide-to="0" data-target="#carousel-monitor-captions"></li>
+						          <li data-slide-to="1" data-target="#carousel-monitor-captions"></li>
+						          <li data-slide-to="2" data-target="#carousel-monitor-captions"></li>
+						        </ol>
+						        <div class="carousel-inner">
+						          <div class="item ca-item active">
+						          	<img src="images/monitor_0.png" alt="">
+						          </div>
+						          <div class="item ca-item">
+						          	<img src="images/monitor_1.png" alt="">
+						          </div>
+						          <div class="item ca-item">
+						          	<img src="images/monitor_2.png" alt="">
+						          </div>
+						        </div>
+						        <a data-slide="prev" href="#carousel-monitor-captions" class="left carousel-control">
+						          <span class="icon-prev"></span>
+						        </a>
+						        <a data-slide="next" href="#carousel-monitor-captions" class="right carousel-control">
+						          <span class="icon-next"></span>
+						        </a>
+						    </div>
+					        </div>
+					        <div class="modal-footer text-left clearfix">
+					        	<p><b>项目描述：</b>
+					        	该网站是一名东大艺术系本科生毕设的一部分。页面由该生设计，由本人实现完成！
+					        	</p>
+					        	<a target="_blank" href="monitor/index.html" class="btn btn-primary pull-right">访问该站</a>
+					        </div>
+					      </div><!-- /.modal-content -->
+					    </div><!-- /.modal-dialog -->
+					  </div><!-- /.modal -->
+				</div>
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="images/irica_thum_s.png" alt="">
+						<a class="product_mask" href="#modal_irica" data-toggle="modal" data-target="#modal_irica">
+							<span class="glyphicon glyphicon-eye-open"></span>
+						</a>
+					</div>
+					<div class="modal fade" id="modal_irica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					          <h4 class="modal-title">国际关系信息收集与分析系统</h4>
+					        </div>
+					        <div class="modal-body">
+					        	<div class="carousel slide" id="carousel-irica-captions">
+							        <ol class="carousel-indicators">
+							          <li class="active" data-slide-to="0" data-target="#carousel-irica-captions"></li>
+							          <li data-slide-to="1" data-target="#carousel-irica-captions"></li>
+							          <li data-slide-to="2" data-target="#carousel-irica-captions"></li>
+							          <li data-slide-to="3" data-target="#carousel-irica-captions"></li>
+							        </ol>
+							        <div class="carousel-inner">
+							          <div class="item ca-item active">
+							          	<img src="images/irica_0.png" alt="">
+							          </div>
+							          <div class="item ca-item">
+							          	<img src="images/irica_1.png" alt="">
+							          </div>
+							          <div class="item ca-item">
+							          	<img src="images/irica_2.png" alt="">
+							          </div>
+							          <div class="item ca-item">
+							          	<img src="images/irica_3.png" alt="">
+							          </div>
+							        </div>
+							        <a data-slide="prev" href="#carousel-irica-captions" class="left carousel-control">
+							          <span class="icon-prev"></span>
+							        </a>
+							        <a data-slide="next" href="#carousel-irica-captions" class="right carousel-control">
+							          <span class="icon-next"></span>
+							        </a>
+							    </div>
+					        </div>
+					        <div class="modal-footer text-left">
+					          <p>
+					          	<b>项目描述：</b>用于收集与分析与国际关系相关的新闻报道的系统。系统爬取国内外部分重要网站的新闻资源，采用自然语言处理技术对新闻文本进行分析。（部队项目，外部不可访问）
+					          </p>
+					          <p>
+					          	<b>本人工作：</b>1）搭建系统，负责前端页面设计与开发。2）借助  GATE、Stanford NER、ICTCLAS 等自然语言处理工具完成中英语种的文本分类、事件抽取任务。3）使用 Google Map 呈现全球热点新闻。4）扩展  jwysiwyg 插件，实现类似文本编辑器的文本标注工具。
+					          </p>
+					        </div>
+					      </div><!-- /.modal-content -->
+					    </div><!-- /.modal-dialog -->
+					  </div>
+				</div>
+			</div>
+<!-- 			<div class="row">
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="" alt="">
+					</div>
+				</div>
+			</div> -->
+		</div>
+		
+		<div class="content-box">
+			<h2>联系<small>Contact</small></h2>
+			<div class="row">
+				<div class="col-lg-6">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$('.carousel').carousel({interval: 3000});	
+</script>
+</body>
+</html>

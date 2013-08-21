@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+body{
+	color: white;
+	width: 100%;
+	height: 100%;
+	font-family: "Helvetica LT Condensed";
+	font-size: 16px;
+	position: relative;
+	overflow-x: hidden 
+}
+
+#theme1 {
+	background: url('../images/theme1/bg.png') no-repeat 50% -500px;
+}
+#theme2 {
+	background: url('../images/theme2/bg.png') no-repeat 50% 0px;
+	color: #9B2223;
+}
+#theme3 {
+	background: url('../images/theme3/bg.png') no-repeat 50% -270px;
+}
+#theme4 {
+	background: url('../images/theme4/bg.png') no-repeat 50% -270px;
+	color: #D61E18;
+}
+#theme5 {
+	background: url('../images/theme5/bg.png') no-repeat 50% 0px;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 600px;
+	position: relative;
+}
+
+#main {
+	padding-top: 200px;
+}
+
+#logo {
+	padding-left: 70px;
+}
+
+#logo a{
+	display: inline-block;
+	height: 30px;
+	width: 185px;
+	text-indent: -5000px;
+}
+#theme1 #logo a {
+	background: url('../images/theme1/logo.png') no-repeat 50% 0;
+}
+#theme2 #logo a {
+	background: url('../images/theme2/logo.png') no-repeat 50% 0;
+}
+#theme3 #logo a {
+	background: url('../images/theme3/logo.png') no-repeat 50% 0;
+}
+#theme4 #logo a {
+	background: url('../images/theme4/logo.png') no-repeat 50% 0;
+}
+#theme5 #logo a {
+	background: url('../images/theme5/logo.png') no-repeat 50% 0;
+}
+
+ul#navigation {
+	margin-top: 10px;
+	width: 100%;
+	padding: 0 50px;
+}
+
+ul#navigation li {
+	float: left;
+}
+
+ul#navigation li a {
+	color: white;
+	display: block;
+	width: 180px;
+	height: 170px;
+	font-size: 22px;
+	text-decoration: none;
+}
+#theme2 ul#navigation li a{
+	color: #9B2223;
+}
+#theme4 ul#navigation li a{
+	color: #D61E18;
+}
+
+ul#navigation li a img{
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	box-shadow: none;
+	top: 0px;
+	left: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+ul#navigation li a img:hover {
+	box-shadow: 15px 15px 15px rgba(0,0,0, 0.3);
+	top: -10px;
+	left: -10px;
+}
+
+ul#navigation li a img:active {
+	box-shadow: none;
+	top: 0px;
+	left: 0px;
+}
+
+ul#navigation li a span{
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+#search_box {
+	width: 250px;
+	margin: 30px auto;
+}
+
+#search_box img {
+	float: left;
+}
+
+#search_box input[type=text]{
+    border: medium none;
+    color: white;
+    height: 25px;
+    margin: 7px 0 0 20px;
+    padding: 2px 10px;
+    width: 170px;
+    font-size: 16px;
+    font-family: "Helvetica LT Condensed";
+}
+
+#theme1 #search_box input[type=text] {
+	background-color: #EC8F24;
+}
+#theme2 #search_box input[type=text] {
+	background-color: #9B2223;
+}
+#theme3 #search_box input[type=text] {
+	background-color: #116CB0;
+}
+#theme4 #search_box input[type=text] {
+	background-color: #D61E18;
+}
+#theme5 #search_box input[type=text] {
+	background-color: #116CB0;
+}
+
+footer {
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	font-family: "华文细黑"
+}
+
+#theme_switch_box {
+	font-size: 12px;
+	position: absolute;
+	width: 310px;
+	height: 30px;
+	right: -252px;
+	top: 0;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+#theme_switch_box:hover {
+	right: 0px;
+}
+
+#theme_switch_box #tip_switch{
+	width: 58px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	border-right: 1px solid white;
+	color: white;
+}
+
+#theme_switch_box #theme_list{
+	float: left;
+	width: 250px;
+}
+
+#theme_list li {
+	float: left;
+}
+
+#theme_list li a {
+	display: block;
+	width: 50px;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	line-height: 30px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+#theme_list li a:hover {
+	background-color: white;
+	color: black;
+}
+
+#theme_list .theme1 {
+	background-color: #EC8F24;
+}
+#theme_list .theme2 {
+	background-color: #9B2223;
+}
+#theme_list .theme3 {
+	background-color: #116CB0;
+}
+#theme_list .theme4 {
+	background-color: #D61E18;
+}
+#theme_list .theme5 {
+	background-color: #116CB0;
+}
+
+#theme1 #tip_switch {
+	background-color: #EC8F24;
+}
+#theme2 #tip_switch {
+	background-color: #9B2223;
+}
+#theme3 #tip_switch {
+	background-color: #116CB0;
+}
+#theme4 #tip_switch {
+	background-color: #D61E18;
+}
+#theme5 #tip_switch {
+	background-color: #116CB0;
+}
+
