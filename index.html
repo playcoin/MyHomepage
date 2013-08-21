@@ -12,7 +12,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
 <div class="navbar navbar-fixed-top navbar-inverse pc-navbar ">
 	<div class="container">
-		<a href="" class="navbar-brand">Playcoin的个人主页</a>
+		<a href="#" class="navbar-brand">Playcoin的个人主页</a>
 		<ul class="nav navbar-nav">
 			<li><a href="#profile"><span class="glyphicon glyphicon-list"></span>简介</a></li>
 			<li><a href="#products"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
@@ -321,7 +321,7 @@
 <script src="js/jquery.scrollto.js" type="text/javascript" charset="utf-8"></script>
 <script>
 	$('.carousel').carousel({interval: 3000});	
-	$('.navbar-nav li a').click(function(e){
+	$('.navbar li a').click(function(e){
 		$($(this).attr('href')).ScrollTo(500);
 		e.preventDefault();
 		return false;
