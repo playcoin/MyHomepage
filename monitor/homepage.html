@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<title>Monitor</title>
+</head>
+<body id="m_1">
+	<div id="wrapper">
+		<header>
+			<div id="user_info">
+				<a class="tdn" href="#">
+					<img height="13px" src="images/main/star.png" alt="">
+				</a>
+				&nbsp;当前用户：
+				<a href="#">黄升</a>
+				&nbsp;
+				<a class="tdn" href="#">
+					<img height="13px" src="images/main/home.png" alt="">
+				</a>
+				&nbsp;
+				<a class="tdn" href="#">
+					<img width="14px" src="images/main/email.png" alt="">
+				</a>
+				&nbsp;|&nbsp;
+				<a href="#">退出</a>&nbsp;&nbsp;
+			</div>
+			<div id="logo_box">
+				<a href="index.html">
+					<img src="images/main/header_logo.png" alt="">
+				</a>
+			</div>
+
+		</header>
+		<div id="main" class="clearfix">
+			<form class="search_box clearfix">
+				<input type="image" src="images/main/search.png">
+				<input class="text-input" type="text" size="20">
+			</form>
+			<div id="side_nav_box">
+				<ul id="side_nav">
+					<li><a id="nav_1" href="#" class="current">Home Page</a></li>
+					<li><a id="nav_2" href="#">Product Design</a></li>
+					<li><a id="nav_3" href="#">Interaction Design</a></li>
+					<li><a id="nav_4" href="#">System Design</a></li>
+					<li><a id="nav_5" href="#">Information Design</a></li>
+				</ul>
+				<ul id="side_extra_nav">
+					<li><a href="#" id="extra_nav_1">Designer & Web programmer</a></li>
+					<li><a href="#" id="extra_nav_2">Storyboard</a></li>
+					<li><a href="#" id="extra_nav_3">Trend of mobile medical treatment</a></li>
+					<li><a href="#" id="extra_nav_4">Experience the real interaction</a></li>
+				</ul>
+			</div>
+			<div id="main_content">
+				<div id="main_content_container" class="clearfix">
+					<div id="homepage_box" class="content_box" >
+						<div class="content_title">
+						</div>
+						<div class="content_center clearfix">
+							<div class="home_index_box">
+								<a href="javascript:;" onclick="$('#side_nav #nav_2').click();return false;" class='index_box'>
+									<img src="images/main/logo_product.png" alt="" style="margin-top:5px" />
+									<br />
+									<span>Product Design</span>
+									<br /><br />
+									<span class='footnote_size'>This website is something about the</span>
+									<br />
+									<span class='footnote_size'>product design and the some idea sketches</span>
+								</a>
+								<a href="javascript:;" onclick="$('#side_nav #nav_5').click();return false;" class='index_box'>
+									<img src="images/main/logo_info.png" width="50px" alt="" style="margin-top:10px" />
+									<br />
+									<span>Information Design</span>
+									<br /><br />
+									<span class='footnote_size'>This website is something about the research</span>
+									<br />
+									<span class='footnote_size'>that I did about the mobile health care</span>
+								</a>
+							</div>
+							<div class="home_sep_box">
+								<img src="images/main/home_sep.png" alt="" />
+							</div>
+							<div class="home_index_box">
+								<a href="javascript:;" onclick="$('#side_nav #nav_3').click();return false;" class='index_box'>
+									<img src="images/main/logo_interaction.png" height="45px" alt="" />
+									<br />
+									<span>Interaction Design</span>
+									<br /><br />
+									<span class='footnote_size'>This website is something about the interaction</span>
+									<br />
+									<span class='footnote_size'>design between the people and the product</span>
+								</a>
+								<a href="javascript:;" onclick="$('#side_nav #nav_4').click();return false;" class='index_box'>
+									<img src="images/main/logo_system.png" height="45px" alt="" />
+									<br />
+									<span>System Design</span>
+									<br /><br />
+									<span class='footnote_size'>This website is something about the whole</span>
+									<br />
+									<span class='footnote_size'>system that the things operate</span>
+								</a>
+							</div>
+							</div>
+					</div>
+					<div id="product_box" class="content_box">
+						<div class="content_title">
+							Product Design
+						</div>
+						<div class="content_center clearfix">
+							<div class="content_left">
+								<div>
+									<img class="zoom_img" onclick="return showBigPic('images/main/product_img1.png')" src="images/main/product_img1_s.png" width="320px" alt="" style="margin-left: 60px">
+								</div>
+								<div>
+									<img class="zoom_img" onclick="return showBigPic('images/main/product_img2.png')" src="images/main/product_img2_s.png" width="220px" alt="">
+									<img class="zoom_img" onclick="return showBigPic('images/main/product_img3.png')" src="images/main/product_img3_s.png" width="220px" alt="">
+								</div>
+							</div>
+							<div class="content_right">
+								此系统图很直观地反映了整个系统内每个元素所承担的角色，而此设备X-monitor+在整个系统中处于极核心的位置。他链接了X-monitor+、养老院、医院、亲人和手机的关系。并使得整个系统更人性化地为人去服务，将整个的资源进行有效的组合。与此同时，移动端的应用使得数据的传输和监测变得可能。所有的信息存储于结果都是由X-monitor+中的组合测量工具测量出的，然后采用云端的数据中心处理，并将数据进行有效的记录和呈现。因此在医生那边能够得到很好的反馈，并因此医生会做出相应的诊断结果以及相应的治疗方法。
+							</div>
+						</div>
+					</div>
+					<div id="interaction_box" class="content_box">
+						<div class="content_title">
+							Interaction Design
+						</div>
+						<div class="content_center clearfix">
+							<div class="content_left">
+								<div class="imgs_box">
+									<img class='pointer_img' src="images/main/cai1.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai2.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai3.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai4.png" alt="" width="80px" style="margin-right: 0">
+									<img class='pointer_img' src="images/main/cai5.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai6.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai7.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai8.png" alt="" width="80px" style="margin-right: 0">
+									<img class='pointer_img' src="images/main/cai9.png" alt="" width="80px">
+									<img class='pointer_img' src="images/main/cai10.png" alt="" width="80px">
+									<a id="bt_color" href="#" onclick="return changeInterTheme(this);">Grey Theme</a>
+								</div>
+								<div class="top_line_box">
+									<img src="images/main/wen1.png" alt="" height="35px">
+									<img src="images/main/wen2.png" alt="" height="35px">
+									<img src="images/main/wen3.png" alt="" height="35px">
+									<img src="images/main/wen4.png" alt="" height="35px">
+									<br>
+									<img src="images/main/wen5.png" alt="" height="35px">
+									<img src="images/main/wen6.png" alt="" height="35px">
+									<img src="images/main/wen7.png" alt="" height="35px">
+									<img src="images/main/wen8.png" alt="" height="35px">
+									<br>
+									<img src="images/main/wen9.png" alt="" height="35px">
+									<img src="images/main/wen10.png" alt="" height="35px">
+								</div>
+							</div>
+							<div class="content_right">
+								整体的图表基于METRO的图表风格，简洁、淳朴、明快通俗易懂，更容易让老年人接受。但是为了在多彩的时尚风与淳朴风中获得有效的平衡，使得图表保持两种风格，使用者可根据自己的爱好进行调试，使得和中老年群体更好的贴合.而其中的每一个图表都可以进行相应的拓展，以及配合整个交互过程的合理使用，意在使得整套交互合理、简洁、易用与乐用。 
+							</div>
+						</div>
+					</div>
+					<div id="system_box" class="content_box">
+						<div class="content_title">
+							System Design
+						</div>
+						<div class="content_center clearfix">
+							<div class="content_left">
+								<div>
+									<img class="zoom_img" onclick="return showBigPic('images/main/system_img1_big.png')" src="images/main/system_img1.png" width="440px" alt="">
+								</div>
+							</div>
+							<div class="content_right">
+								此系统图很直观地反映了整个系统内每个元素所承担的角色，而此设备X-monitor+在整个系统中处于极核心的位置。他链接了X-monitor+、养老院、医院、亲人和手机的关系。并使得整个系统更人性化地为人去服务，将整个的资源进行有效的组合。与此同时，移动端的应用使得数据的传输和监测变得可能。所有的信息存储于结果都是由X-monitor+中的组合测量工具测量出的，然后采用云端的数据中心处理，并将数据进行有效的记录和呈现。因此在医生那边能够得到很好的反馈，并因此医生会做出相应的诊断结果以及相应的治疗方法。
+							</div>
+						</div>
+					</div>
+					<div id="info_box" class="content_box">
+						<div class="content_title">
+							Information Design
+						</div>
+						<div class="content_center clearfix">
+							<div class="content_left">
+								<div>
+									<img class="zoom_img" onclick="return showBigPic('images/main/info_img1_big.png')" src="images/main/info_img1.png" width="220px" alt="">
+									<img class="zoom_img" onclick="return showBigPic('images/main/info_img2_big.png')" src="images/main/info_img2.png" width="220px" alt="">
+								</div>
+								<div>
+									<img class="zoom_img" onclick="return showBigPic('images/main/info_img3_big.png')" src="images/main/info_img3.png" width="445px" alt="">
+								</div>
+							</div>
+							<div class="content_right">
+								X-monitor+将温度计、血糖、血压、血脂等检测仪进行巧妙的组合。养老院中的老年人通过X-monitor+监测后，这些数据将被图表化信息化的呈现。其中就包括老年人常见问题“三高”的监测，即对于血压、血脂、血糖的监测，当老年人的这些身体数据超过相应的警戒值的时候，X-monitor+将会发出相应的警报，让这一信息尽快地让医护人员和亲人知道。将这些数据的信息设计化，使得原本生硬的数据变得生动与人性化，与此同时也让人更容易的看懂了。
+							</div>
+						</div>
+					</div>
+					<div id="designer_box" class="content_box">
+						<div class="content_title">
+							Designer & Web programmer
+						</div>
+						<div class="content_center clearfix">
+							<img src="images/main/photo_hs.png" alt="" />
+							<br />
+							<p>Designer: Huang Sheng</p>
+							<p>Department: School of Art, SEU</p>
+							<p>Tel: 15651690072</p>
+							<p>Email: huangsheng@gmail.com</p>
+							<img src="images/main/photo_pc.png" alt="" />
+							<br />
+							<p>Web Programmer: Peng Cheng</p>
+							<p>Department: Computer Science and Engeering, SEU</p>
+							<p>Tel: 15850658985</p>
+							<p>Email: seuplaycoin@gmail.com</p>
+						</div>
+					</div>
+					<div id="story_box" class="content_box">
+						<div class="content_title">
+							Storyboard
+						</div>
+						<div class="content_center clearfix tc pt10">
+							<a style="top: 0px; left: -5px;" href="javascript:showBigPic('images/main/s_p1_big.png')"><img alt="" src="images/main/s_p1.png"></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a style="top: 0px; left: -2px;" href="javascript:showBigPic('images/main/s_p2_big.png')"><img alt="" src="images/main/s_p2.png"></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a style="left:0; top:0;" href="javascript:showBigPic('images/main/s_p3_big.png')"><img alt="" src="images/main/s_p3.png"></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a style="top: 0px; left: -1px;" href="javascript:showBigPic('images/main/s_p4_big.png')"><img alt="" src="images/main/s_p4.png"></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a style="top: 0px; left: -3px;" href="javascript:showBigPic('images/main/s_p5_big.png')"><img alt="" src="images/main/s_p5.png"></a>
+						</div>
+					</div>
+					<div id="trend_box" class="content_box">
+						<div class="content_title">
+							Trend of mobile medical treatment
+						</div>
+						<div class="content_center clearfix tc pt10">
+							<a href="javascript:showBigPic('images/main/t_p1_big.png')" style="top: 0px; left: -5px;"><img src="images/main/t_p1.png" alt=""></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a href="javascript:showBigPic('images/main/t_p2_big.png')" style="top: 0px; left: -6px;"><img src="images/main/t_p2.png" alt=""></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a href="javascript:showBigPic('images/main/t_p3_big.png')" style="top: 0px; left: 1px;"><img src="images/main/t_p3.png" alt=""></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a href="javascript:showBigPic('images/main/t_p4_big.png')" style="top: 0px; left: 3px;"><img src="images/main/t_p4.png" alt=""></a>
+							<br>
+							<span class="verti_link_line">
+								<span></span>
+							</span>
+							<br>
+							<a href="javascript:showBigPic('images/main/t_p5_big.png')" style="top: 0px; left: -8px;"><img src="images/main/t_p5.png" alt=""></a>
+						</div>
+					</div>
+					<div id="exp_box" class="content_box">
+						<div class="content_title">
+							Experience the real interaction
+						</div>
+						<div class="content_center clearfix">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer_nav">
+				<div id="footer_nav_arrow"></div>
+				<ul id="navigation" class="clearfix">
+					<li>
+						<a id="nav_1" href="#">
+							<div class='img_box nav_1'></div>
+							<span>Home Page</span>
+						</a>
+					</li>
+					<li>
+						<a id="nav_2" href="#">
+							<div class='img_box nav_2'></div>
+							<span>Product Design</span>
+						</a>
+					</li>
+					<li>
+						<a id="nav_3" href="#">
+							<div class='img_box nav_3'></div>
+							<span>Interaction Design</span>
+						</a>
+					</li>
+					<li>
+						<a id="nav_4" href="#">
+							<div class='img_box nav_4'></div>
+							<span>System Design</span>
+						</a>
+					</li>
+					<li>
+						<a id="nav_5" href="#">
+							<div class='img_box nav_5'></div>
+							<span>Information Design</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sys_intro">
+			<div class="intro_title clearfix">
+				<div class="half_dot_line fl"></div>
+				<div class="intro_title_text fl">GRADUATION DESIGN</div>
+				<div class="half_dot_line fl"></div>
+			</div>
+			<div class="intro_content">
+				<h4>X-monitor+的系统构架</h4>
+<pre>A. X-monitor+养老院公用医疗设备、 X-monitor+移动接收器和养老院服务系统是整个服务体系的客户端，分别为养老院老年人、医疗
+    机构人员以及老年人亲人提供服务，使得其在整个体系中更好地服务于养老院的老年人，对自己的身体状况做一个很好地监测和
+    反馈。</pre>
+<pre>B. X-monitor+产品功能：
+    X-monitor+（养老院公用设备端）可对老年人提供以下服务：自我诊断、在线诊断、身体状况监测和反馈、紧急求救等功能。
+    X-monitor+（老年人移动端）上使用的移动程序主要是身体状况的监测和传输。</pre>  
+<pre>C. 信息的流通：
+    X-monitor+整个服务系统的信息都是基于云端的同步，在养老院大厅的公用医疗设备根据每位老年人的磁卡信息，可以实现信息的
+    总搜集与监测，而X-monitor+腕带的接收器可以实现信息的接收和释放。而且其中所有的信息存储和结果都是由 X-monitor+中的组
+    合监测工具测量出的，然后采用的云端的数据中心处理，产品本身不参与运算，也不需要存储庞大的信息。首先 X-monitor+是人机
+    的互动设备，它会对 X-monitor+所测试的数据进行有效的记录，并且将其有效直观的图表化呈现，然后进行有效的信息传输。在医
+    生那边和亲人那边都能得到良好的信息反馈。而医生通过此信息和数据做出相应的诊断结果与病情的治疗方法，与此同时再反馈给 
+    X-monitor+养老院公用设备端和老年人移动端，并且将此数据完整的传输到云端作为医生的共享案例。</pre>  
+<pre>D. 系统组成和技术支撑：
+    X-monitor+包括两部分：养老院公用设备端产品和老年人移动端腕带设备。
+    X-monitor+旨在作为老年人的健康小助手，对于老年人的身体进行实时的检查和监测，然后进行图表化的有效呈现，通过云服务的
+    形式进行有效的传输。 另外X-monitor+操作过程中会用到现流行的医疗卡，可以有效将病人和机器匹配以及数据的转换，以便医生
+    更好地了解病人的信息。而在使用X-monitor+养老院公用设备端时，老年人只需将每人配备的医疗卡插入X-monitor+养老院公用医
+    疗设备，然后可以跟做跟自己信息相匹配的医疗检测，与此同时养老院公用医疗设备会时时进行数据的同步，能够确保数据一直保
+    持最新的状态，而以前的数据会被传到云端，供以后医生查询使用。
+    养老院的老年人佩戴信号接收器X-monitor+,若人体各部分数据发生异常X-monitor+将向云端平台和养老院公共型医疗设备X-monitor+
+    发出紧急信号。
+    养老院医护人员也配有一个信号接收器X-monitor+,若老年人身体各部分数据发生异常X-monitor+将向医护人员的腕式接收器
+    X-monitor+发出紧急信号，需进行紧急救助。</pre> 
+	    		<div class="intro_footer">
+	    			<a href="index.html">
+						<img alt="" src="images/main/header_logo.png">
+					</a>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+	
+	<div id="full_frame">
+		<img src="images/main/info_img3_big.png" alt="" height="750px">
+	</div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>

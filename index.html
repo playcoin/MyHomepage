@@ -6,81 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-glyphicons.css">
-	<style>
-		body {
-			font-family: "Helvetica Neue",Helvetica,Arial, 微软雅黑;
-			padding-top: 70px;
-		}
-
-		h1, h2, h3, p, div, input {
-			font-family: "Helvetica Neue",Helvetica,Arial, 微软雅黑;
-		}
-		h2 small {
-			font-size: 85%;
-			color: inherit;
-			margin-left: 10px;
-		}
-
-		.pc-navbar {
-			background-color: #4386F4;
-		}
-
-		.pc-navbar .navbar-brand{
-			color: white;
-		}
-		.pc-navbar .navbar-nav > li > a {
-			color: #CCDEFC;
-		}
-		.pc-navbar .navbar-nav > .active > a, .pc-navbar .navbar-nav > .active > a:hover {
-			background-color: #1D72F9;
-			color: white;
-		}
-		.glyphicon {
-			position: relative;
-			margin-right: 3px;
-			top: 2px;
-		}
-
-		.content-box {
-			/*border: 1px solid silver;*/
-			padding: 1px 20px 20px;
-			border-radius: 6px;
-			box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 40px 8px rgba(0, 0, 0, 0.25);
-			margin-bottom: 40px;
-		}
-
-		.content-box h2 {
-			background: -webkit-linear-gradient(top, rgba(107,107,107,1) 0%,rgba(44,44,44,1) 60%,rgba(0,0,0,1) 100%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
-			-webkit-box-reflect: below -7px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.2, transparent), to(rgba(3,3,3,.1)));
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			margin-bottom: 15px;
-		}
-
-		.ca-item {
-			background-color: #383535;
-			height: 450px;
-			width: 100%;
-		}
-
-		.container {
-			width: 940px;
-		}
-
-		.ca-item .carousel-caption {
-			transition: all ease 0.5s;
-			left: 0;
-			right: 0;
-			bottom: -100%;
-			background-color: rgba(0,0,0, 0.3);
-			padding-bottom: 50px;
-		}
-
-		.ca-item:hover .carousel-caption {
-			bottom: 0;
-		}
-
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 	<title>Playcoin's Homepage</title>
 </head>
 <body>
@@ -88,70 +14,205 @@
 	<div class="container">
 		<a href="" class="navbar-brand">Playcoin的个人主页</a>
 		<ul class="nav navbar-nav">
-			<li><a href="#"><span class="glyphicon glyphicon-glass"></span>专业特长</a></li>
-			<li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase"></span>项目经验</a></li>
-			<li><a href="#"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-glass"></span>简介</a></li>
+			<li class="active"><a href="#"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>联系</a></li>
 		</ul>
 	</div>
 </div>
-
-<div class="container">
-	<div class="content-box">
-		<h2>个人信息<small>Personal Info</small></h2>
-		<div class="row">
-			<div class="col-lg-6">
-				<ul>
-					<li>基本信息</li>
-					<li>专业技能</li>
-					<li>兴趣爱好</li>
-				</ul>
+<div id="main">
+	<div  class="container">
+		<div class="content-box">
+			<div class="row">
+				<div class="col-lg-4">
+					<img src="images/photo_s.png" alt="" width="250px">
+				</div>
+				<div class="col-lg-8" id="personal-info">
+					<h2>彭程<small>Peng Cheng</small></h2>
+					<p>
+						我是一名东南大学计算机学院研究生，也是一名Web开发工程师。
+						<br>
+						欢迎访问我的个人主页！
+					</p>
+					<hr />
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="icon-item">
+								<img src="images/email.png" alt="" height="19px">
+								<a href="mailto:seuplaycoin@gmail.com">seuplaycoin@gmail.com</a>
+							</div>
+							<div class="icon-item">
+								<img src="images/sinaweibo_b.png" alt="" height="19px">
+								<a href="http://weibo.com/u/2000335193">@playcoin</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="icon-item">
+								<img src="images/gitlogo.png" alt="" height="20px">
+								<a href="https://github.com/playcoin">https://github.com/playcoin</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-6"><img src="labelwall.png" alt="" width="435"></div>
 		</div>
-	</div>
-	<div class="content-box">
-		<h2>作品集<small>Products</small></h2>
-		<div class="carousel slide " id="carousel-example-captions">
-	        <ol class="carousel-indicators">
-	          <li class="active" data-slide-to="0" data-target="#carousel-example-captions"></li>
-	          <li data-slide-to="1" data-target="#carousel-example-captions"></li>
-	          <li data-slide-to="2" data-target="#carousel-example-captions"></li>
-	        </ol>
-	        <div class="carousel-inner">
-	          <div class="item ca-item active">
-	          	<img src="pic1.png" alt="">
-	            <div class="carousel-caption">
-	              <h3>First slide label</h3>
-	              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-	            </div>
-	          </div>
-	          <div class="item ca-item">
-	          	<img src="pic2.png" alt="">
-	            <div class="carousel-caption">
-	              <h3>Second slide label</h3>
-	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	            </div>
-	          </div>
-	          <div class="item ca-item">
-	            <div class="carousel-caption">
-	              <h3>Third slide label</h3>
-	              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-	            </div>
-	          </div>
-	        </div>
-	        <a data-slide="prev" href="#carousel-example-captions" class="left carousel-control">
-	          <span class="icon-prev"></span>
-	        </a>
-	        <a data-slide="next" href="#carousel-example-captions" class="right carousel-control">
-	          <span class="icon-next"></span>
-	        </a>
-	    </div>
-	</div>
-	
-	<div class="content-box">
-		<h2>关注我<small>Focus on Me</small></h2>
-		<div class="row">
-			<div class="col-lg-6">
+		<div class="content-box">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>简介<small>Profile</small></h2>
+					<ul class="list-unstyled">
+						<li>
+							<h4>专业技能</h4>
+							<ul>
+								<li>精通HTML+CSS+Javascript，熟练使用jQuery</li>
+								<li>关注前端技术发展，如HTML5、响应式设计</li>
+								<li>熟悉 Struts 2 (Java)、Django (Python) 等Web框架，具备快速开发Web项目能力</li>
+								<!-- <li>熟悉常用算法和数据结构，并能在实践中灵活运用</li> -->
+								<li>熟悉常用的机器学习算法，关注深度学习技术的发展</li>
+								<li>熟悉自然语言处理领域</li>
+							</ul>
+						</li>
+						<li>
+							<h4>兴趣爱好</h4>
+							<ul>
+								<li>篮球、网球、DOTA 2、美剧</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6"><img src="images/lw3.png" alt="" width="400"></div>
+			</div>
+		</div>
+		<div class="content-box">
+			<h2>作品集<small>Products</small></h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="images/monitor_thum_s.png" alt="">
+						<a class="product_mask" href="#model_monitor" data-toggle="modal" data-target="#model_monitor">
+							<span class="glyphicon glyphicon-eye-open"></span>
+						</a>
+					</div>
+					<div class="modal fade" id="model_monitor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					          <h4 class="modal-title">X-monitor</h4>
+					          
+					        </div>
+					        <div class="modal-body">
+					        	<div class="carousel slide" id="carousel-monitor-captions">
+						        <ol class="carousel-indicators">
+						          <li class="active" data-slide-to="0" data-target="#carousel-monitor-captions"></li>
+						          <li data-slide-to="1" data-target="#carousel-monitor-captions"></li>
+						          <li data-slide-to="2" data-target="#carousel-monitor-captions"></li>
+						        </ol>
+						        <div class="carousel-inner">
+						          <div class="item ca-item active">
+						          	<img src="images/monitor_0.png" alt="">
+						          </div>
+						          <div class="item ca-item">
+						          	<img src="images/monitor_1.png" alt="">
+						          </div>
+						          <div class="item ca-item">
+						          	<img src="images/monitor_2.png" alt="">
+						          </div>
+						        </div>
+						        <a data-slide="prev" href="#carousel-monitor-captions" class="left carousel-control">
+						          <span class="icon-prev"></span>
+						        </a>
+						        <a data-slide="next" href="#carousel-monitor-captions" class="right carousel-control">
+						          <span class="icon-next"></span>
+						        </a>
+						    </div>
+					        </div>
+					        <div class="modal-footer text-left clearfix">
+					        	<p><b>项目描述：</b>
+					        	该网站是一名东大艺术系本科生毕设的一部分。页面由该生设计，由本人实现完成！
+					        	</p>
+					        	<a target="_blank" href="monitor/index.html" class="btn btn-primary pull-right">访问该站</a>
+					        </div>
+					      </div><!-- /.modal-content -->
+					    </div><!-- /.modal-dialog -->
+					  </div><!-- /.modal -->
+				</div>
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="images/irica_thum_s.png" alt="">
+						<a class="product_mask" href="#modal_irica" data-toggle="modal" data-target="#modal_irica">
+							<span class="glyphicon glyphicon-eye-open"></span>
+						</a>
+					</div>
+					<div class="modal fade" id="modal_irica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					          <h4 class="modal-title">国际关系信息收集与分析系统</h4>
+					        </div>
+					        <div class="modal-body">
+					        	<div class="carousel slide" id="carousel-irica-captions">
+							        <ol class="carousel-indicators">
+							          <li class="active" data-slide-to="0" data-target="#carousel-irica-captions"></li>
+							          <li data-slide-to="1" data-target="#carousel-irica-captions"></li>
+							          <li data-slide-to="2" data-target="#carousel-irica-captions"></li>
+							          <li data-slide-to="3" data-target="#carousel-irica-captions"></li>
+							        </ol>
+							        <div class="carousel-inner">
+							          <div class="item ca-item active">
+							          	<img src="images/irica_0.png" alt="">
+							          </div>
+							          <div class="item ca-item">
+							          	<img src="images/irica_1.png" alt="">
+							          </div>
+							          <div class="item ca-item">
+							          	<img src="images/irica_2.png" alt="">
+							          </div>
+							          <div class="item ca-item">
+							          	<img src="images/irica_3.png" alt="">
+							          </div>
+							        </div>
+							        <a data-slide="prev" href="#carousel-irica-captions" class="left carousel-control">
+							          <span class="icon-prev"></span>
+							        </a>
+							        <a data-slide="next" href="#carousel-irica-captions" class="right carousel-control">
+							          <span class="icon-next"></span>
+							        </a>
+							    </div>
+					        </div>
+					        <div class="modal-footer text-left">
+					          <p>
+					          	<b>项目描述：</b>用于收集与分析与国际关系相关的新闻报道的系统。系统爬取国内外部分重要网站的新闻资源，采用自然语言处理技术对新闻文本进行分析。（部队项目，外部不可访问）
+					          </p>
+					          <p>
+					          	<b>本人工作：</b>1）搭建系统，负责前端页面设计与开发。2）借助  GATE、Stanford NER、ICTCLAS 等自然语言处理工具完成中英语种的文本分类、事件抽取任务。3）使用 Google Map 呈现全球热点新闻。4）扩展  jwysiwyg 插件，实现类似文本编辑器的文本标注工具。
+					          </p>
+					        </div>
+					      </div><!-- /.modal-content -->
+					    </div><!-- /.modal-dialog -->
+					  </div>
+				</div>
+			</div>
+<!-- 			<div class="row">
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="product_thum">
+						<img src="" alt="">
+					</div>
+				</div>
+			</div> -->
+		</div>
+		
+		<div class="content-box">
+			<h2>联系<small>Contact</small></h2>
+			<div class="row">
+				<div class="col-lg-6">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -160,7 +221,7 @@
 <script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
-	$('.carousel').carousel();	
+	$('.carousel').carousel({interval: 3000});	
 </script>
 </body>
 </html>
