@@ -121,10 +121,10 @@
 						          </div>
 						        </div>
 						        <a data-slide="prev" href="#carousel-monitor-captions" class="left carousel-control">
-						          <span class="icon-prev"></span>
+						          <span class="glyphicon glyphicon-circle-arrow-left"></span>
 						        </a>
 						        <a data-slide="next" href="#carousel-monitor-captions" class="right carousel-control">
-						          <span class="icon-next"></span>
+						          <span class="glyphicon glyphicon-circle-arrow-right"></span>
 						        </a>
 						    </div>
 					        </div>
@@ -174,10 +174,10 @@
 							          </div>
 							        </div>
 							        <a data-slide="prev" href="#carousel-irica-captions" class="left carousel-control">
-							          <span class="icon-prev"></span>
+							          <span class="glyphicon glyphicon-circle-arrow-left"></span>
 							        </a>
 							        <a data-slide="next" href="#carousel-irica-captions" class="right carousel-control">
-							          <span class="icon-next"></span>
+							          <span class="glyphicon glyphicon-circle-arrow-right"></span>
 							        </a>
 							    </div>
 					        </div>
@@ -232,10 +232,10 @@
 							          </div>
 							        </div>
 							        <a data-slide="prev" href="#carousel-irica-captions" class="left carousel-control">
-							          <span class="icon-prev"></span>
+							          <span class="glyphicon glyphicon-circle-arrow-left"></span>
 							        </a>
 							        <a data-slide="next" href="#carousel-irica-captions" class="right carousel-control">
-							          <span class="icon-next"></span>
+							          <span class="glyphicon glyphicon-circle-arrow-right"></span>
 							        </a>
 							    </div>
 					        </div>
@@ -284,10 +284,10 @@
 							          </div>
 							        </div>
 							        <a data-slide="prev" href="#carousel-gm-captions" class="left carousel-control">
-							          <span class="icon-prev"></span>
+							          <span class="glyphicon glyphicon-circle-arrow-left"></span>
 							        </a>
 							        <a data-slide="next" href="#carousel-gm-captions" class="right carousel-control">
-							          <span class="icon-next"></span>
+							          <span class="glyphicon glyphicon-circle-arrow-right"></span>
 							        </a>
 							    </div>
 					        </div>
@@ -321,7 +321,14 @@
 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.scrollto.js" type="text/javascript" charset="utf-8"></script>
 <script>
-	$('.carousel').carousel({interval: 3000});	
+	// for modal show and hide
+	$('.modal').on('shown.bs.modal', function () {
+		$('.carousel', this).carousel({interval: 3000});
+	});
+	$('.modal').on('hide.bs.modal', function () {
+		$('.carousel', this).carousel('pause');
+	});
+	// for slide to
 	$('.navbar li a').click(function(e){
 		$($(this).attr('href')).ScrollTo(500);
 		e.preventDefault();
