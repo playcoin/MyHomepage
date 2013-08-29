@@ -1,6 +1,6 @@
 
-var POPBOX_HEIGHT = 775;
-var POPBOX_WIDTH = 1200;
+var POPBOX_HEIGHT = document.documentElement.clientHeight;
+var POPBOX_WIDTH = document.documentElement.clientWidth;
 var MAIN_CONTENT_WIDTH = 620;
 
 /**
@@ -11,7 +11,7 @@ var MAIN_CONTENT_WIDTH = 620;
 function showBigPic(picpath){
 	// 先取得大图图片
 	var $_img = $("<img src='" + picpath + "' />");
-	setTimeout(function(){
+	$_img.load(function(){
 		var height = $_img[0].naturalHeight, width = $_img[0].naturalWidth;
 		// 先按高度压缩
 		if(height > POPBOX_HEIGHT){
@@ -25,10 +25,10 @@ function showBigPic(picpath){
 		}
 		// 设置高度
 		$_img.attr('height', height)
-		$_img.attr('style', 'margin-top:' + ((POPBOX_HEIGHT - height) / 2) + 'px')
+		$_img.attr('style', 'margin-top:' + ((POPBOX_HEIGHT - height) / 2 + document.documentElement.scrollTop) + 'px')
 
 		$("#full_frame").html($_img).show()
-	}, 50)
+	});
 }
 
 /**
@@ -39,7 +39,7 @@ function showBigPic(picpath){
 function fullFrameHandler(evt){
 	var self = this;
 	if(self == evt.target){
-		$(self).hide()
+		$(self).hide();
 	}
 	return true;
 }
