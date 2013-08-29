@@ -2,16 +2,35 @@
 var POPBOX_HEIGHT = document.documentElement.clientHeight;
 var POPBOX_WIDTH = document.documentElement.clientWidth;
 var MAIN_CONTENT_WIDTH = 620;
+var SPIN_OPTION = {
+	lines: 13, // The number of lines to draw
+	length: 20, // The length of each line
+	width: 10, // The line thickness
+	radius: 30, // The radius of the inner circle
+	corners: 1, // Corner roundness (0..1)
+	rotate: 0, // The rotation offset
+	direction: 1, // 1: clockwise, -1: counterclockwise
+	color: '#FFF', // #rgb or #rrggbb or array of colors
+	speed: 1, // Rounds per second
+	trail: 60, // Afterglow percentage
+	shadow: false, // Whether to render a shadow
+	hwaccel: false, // Whether to use hardware acceleration
+	className: 'spinner', // The CSS class to assign to the spinner
+	zIndex: 2e9, // The z-index (defaults to 2000000000)
+	top: (document.documentElement.clientHeight / 2 - 75), // Top position relative to parent in px
+	left: (document.documentElement.clientWidth / 2 - 75) // Left position relative to parent in px
+};
 
 /**
  * 显示大图
- * @param  {[type]} picpath [description]
- * @return {[type]}         [description]
+ * @param	{[type]} picpath [description]
+ * @return {[type]}				 [description]
  */
 function showBigPic(picpath){
-	// 先取得大图图片
-	var $_load = $("<img src='" + 'images/main/page-loader.gif' + "' />");
-	picHandler($_load);
+	// 等待加载图片
+	var target = $('<div/>');
+	var spinner = new Spinner(SPIN_OPTION).spin(target[0]);
+	$("#full_frame").html('').append(target).show();
 
 	var $_img = $("<img src='" + picpath + "' />");
 	$_img.load(function(){
@@ -40,8 +59,8 @@ function picHandler($_img) {
 
 /**
  * 覆盖层的隐藏事件处理函数
- * @param  {[type]} evt [description]
- * @return {[type]}     [description]
+ * @param	{[type]} evt [description]
+ * @return {[type]}		 [description]
  */
 function fullFrameHandler(evt){
 	var self = this;
@@ -53,8 +72,8 @@ function fullFrameHandler(evt){
 
 /**
  * 切换交互设计的风格
- * @param  {[type]} obj [description]
- * @return {[type]}     [description]
+ * @param	{[type]} obj [description]
+ * @return {[type]}		 [description]
  */
 function changeInterTheme(obj){
 	// 判断当前的风格，并进行切换
@@ -77,8 +96,8 @@ function changeInterTheme(obj){
 
 /**
  * 移动下方箭头
- * @param  {[type]} obj [description]
- * @return {[type]}     [description]
+ * @param	{[type]} obj [description]
+ * @return {[type]}		 [description]
  */
 function animateNavArrow(obj){
 	var left = $(obj).position().left;
@@ -89,8 +108,8 @@ function animateNavArrow(obj){
 
 /**
  * 切换左侧导航的高亮项
- * @param  {[type]} obj [description]
- * @return {[type]}     [description]
+ * @param	{[type]} obj [description]
+ * @return {[type]}		 [description]
  */
 function changeSideNavCurrennt(obj){
 	$('#side_nav li a').removeClass('current');
@@ -99,8 +118,8 @@ function changeSideNavCurrennt(obj){
 
 /**
  * 移动主内容框
- * @param  {[type]} index [description]
- * @return {[type]}     [description]
+ * @param	{[type]} index [description]
+ * @return {[type]}		 [description]
  */
 function animateMainContent(index){
 	var left = -((index - 1) * MAIN_CONTENT_WIDTH);
@@ -111,8 +130,8 @@ function animateMainContent(index){
 var CURDOC_INDEX = 0;
 /**
  * 切换显示左右箭头
- * @param  {[type]} index [description]
- * @return {[type]}       [description]
+ * @param	{[type]} index [description]
+ * @return {[type]}			 [description]
  */
 function toggleLRArrow(index) {
 	index = index || CURDOC_INDEX;
@@ -136,8 +155,8 @@ function toggleLRArrow(index) {
 
 /**
  * 切换主题
- * @param  {[type]} bgclass [description]
- * @return {[type]}         [description]
+ * @param	{[type]} bgclass [description]
+ * @return {[type]}				 [description]
  */
 function changebg(bgclass){
 	$("#wrapper").attr('class', bgclass);
@@ -212,5 +231,4 @@ $(document).ready(function(){
 	if(nav_index>-1){
 		$("#navigation li #" + location.hash.substring(3)).click()
 	}
-	$.get('images/main/page-loader.gif');
 });
