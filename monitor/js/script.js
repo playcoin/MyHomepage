@@ -10,25 +10,32 @@ var MAIN_CONTENT_WIDTH = 620;
  */
 function showBigPic(picpath){
 	// 先取得大图图片
+	var $_load = $("<img src='" + 'images/main/page-loader.gif' + "' />");
+	picHandler($_load);
+
 	var $_img = $("<img src='" + picpath + "' />");
 	$_img.load(function(){
-		var height = $_img[0].naturalHeight, width = $_img[0].naturalWidth;
-		// 先按高度压缩
-		if(height > POPBOX_HEIGHT){
-			width = width * POPBOX_HEIGHT / height
-			height = POPBOX_HEIGHT;
-		}
-		// 检查宽度
-		if(width > POPBOX_WIDTH){
-			height = height * POPBOX_WIDTH / width
-			width = POPBOX_WIDTH;
-		}
-		// 设置高度
-		$_img.attr('height', height)
-		$_img.attr('style', 'margin-top:' + ((POPBOX_HEIGHT - height) / 2 + document.documentElement.scrollTop) + 'px')
-
-		$("#full_frame").html($_img).show()
+		picHandler($_img);
 	});
+}
+
+function picHandler($_img) {
+	var height = $_img[0].naturalHeight, width = $_img[0].naturalWidth;
+	// 先按高度压缩
+	if(height > POPBOX_HEIGHT){
+		width = width * POPBOX_HEIGHT / height;
+		height = POPBOX_HEIGHT;
+	}
+	// 检查宽度
+	if(width > POPBOX_WIDTH){
+		height = height * POPBOX_WIDTH / width;
+		width = POPBOX_WIDTH;
+	}
+	// 设置高度
+	$_img.attr('height', height);
+	$_img.attr('style', 'margin-top:' + ((POPBOX_HEIGHT - height) / 2 + document.documentElement.scrollTop) + 'px');
+
+	$("#full_frame").html($_img).show();
 }
 
 /**
@@ -205,4 +212,5 @@ $(document).ready(function(){
 	if(nav_index>-1){
 		$("#navigation li #" + location.hash.substring(3)).click()
 	}
+	$.get('images/main/page-loader.gif');
 });
