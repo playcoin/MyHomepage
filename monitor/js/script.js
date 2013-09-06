@@ -35,6 +35,7 @@ function showBigPic(picpath){
 	var $_img = $("<img src='" + picpath + "' />");
 	$_img.load(function(){
 		var height = $_img[0].naturalHeight, width = $_img[0].naturalWidth;
+		var scrollTop = document.documentElement.scrollTop + document.body.scrollTop;
 		// 先按高度压缩
 		if(height > POPBOX_HEIGHT){
 			width = width * POPBOX_HEIGHT / height;
@@ -47,7 +48,7 @@ function showBigPic(picpath){
 		}
 		// 设置高度
 		$_img.attr('height', height);
-		$_img.attr('style', 'margin-top:' + ((POPBOX_HEIGHT - height) / 2 + document.documentElement.scrollTop) + 'px');
+		$_img.attr('style', 'margin-top:' + ((POPBOX_HEIGHT - height) / 2 + scrollTop) + 'px');
 
 		$("#full_frame").html($_img).show();
 	});
