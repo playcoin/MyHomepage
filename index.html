@@ -5,30 +5,43 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/bootstrap-glyphicons.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Playcoin's Homepage</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
-<div class="navbar navbar-fixed-top navbar-inverse pc-navbar ">
+<nav class="navbar navbar-fixed-top navbar-inverse pc-navbar " role="navigation">
 	<div class="container">
-		<a href="#" class="navbar-brand">Playcoin的个人主页</a>
-		<ul class="nav navbar-nav">
-			<li><a href="#profile"><span class="glyphicon glyphicon-list"></span>简介</a></li>
-			<li><a href="#products"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
-			<!-- <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span>联系</a></li> -->
-			<li><a href="#about"><span class="glyphicon glyphicon-bookmark"></span>关于</a></li>
-		</ul>
+		<div class="nav-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+			<a href="#" class="navbar-brand">Playcoin的个人主页</a>
+		</div>
+		
+		<div class="collapse navbar-collapse in">
+			<ul class="nav navbar-nav">
+				<li><a href="#profile"><span class="glyphicon glyphicon-list"></span>简介</a></li>
+				<li><a href="#products"><span class="glyphicon glyphicon-th-large"></span>作品集</a></li>
+				<li><a href="#about"><span class="glyphicon glyphicon-bookmark"></span>关于</a></li>
+			</ul>
+		</div>
+		
 	</div>
-</div>
+</nav>
 <div id="main">
 	<div class="container">
 		<div class="content-box">
 			<div class="row">
-				<div class="col-lg-4">
-					<img src="images/photo_s.jpg" alt="" width="250px">
+				<div class="col-4 col-lg-4">
+					<img src="images/photo_s.jpg" alt="" width="100%">
 				</div>
-				<div class="col-lg-8" id="personal-info">
+				<div class="col-8 col-lg-8" id="personal-info">
 					<h2>彭程<small>Peng Cheng</small></h2>
 					<p>
 						欢迎访问我的个人主页！
@@ -37,7 +50,7 @@
 					</p>
 					<hr />
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-6 col-lg-6">
 							<div class="icon-item">
 								<img src="images/email.png" alt="" height="19px">
 								<a href="mailto:seuplaycoin@gmail.com">seuplaycoin@gmail.com</a>
@@ -47,7 +60,7 @@
 								<a href="http://weibo.com/u/2000335193">@playcoin</a>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-6 col-lg-6">
 							<div class="icon-item">
 								<img src="images/gitlogo.png" alt="" height="20px">
 								<a href="https://github.com/playcoin">https://github.com/playcoin</a>
@@ -59,7 +72,7 @@
 		</div>
 		<div id="profile" class="content-box">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-6 col-lg-6">
 					<h2>简介<small>Profile</small></h2>
 					<ul class="list-unstyled">
 						<li>
@@ -81,222 +94,222 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-6"><img src="images/lw5.png" alt="" width="400"></div>
+				<div class="col-6 col-lg-6"><img src="images/lw5.png" alt="" width="100%"></div>
 			</div>
 		</div>
 		<div id="products" class="content-box">
 			<h2>作品集<small>Products</small></h2>
 			<div class="row show-grid">
-				<div class="col-lg-6">
+				<div class="col-6 col-lg-6">
 					<div class="product_thum">
-						<img src="images/monitor_thum_s.png" alt="">
+						<img src="images/monitor_thum_s.png" alt="" width="100%">
 						<a class="product_mask" href="#model_monitor" data-toggle="modal" data-target="#model_monitor">
 							<span class="glyphicon glyphicon-eye-open"></span>
 						</a>
 					</div>
 					<div class="modal fade" id="model_monitor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					    <div class="modal-dialog">
-					      <div class="modal-content">
-					        <div class="modal-header">
-					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					          <h4 class="modal-title">X-monitor</h4>
-					        </div>
-					        <div class="modal-body">
-					        	<div class="carousel slide" id="carousel-monitor-captions">
-						        <ol class="carousel-indicators">
-						          <li class="active" data-slide-to="0" data-target="#carousel-monitor-captions"></li>
-						          <li data-slide-to="1" data-target="#carousel-monitor-captions"></li>
-						          <li data-slide-to="2" data-target="#carousel-monitor-captions"></li>
-						        </ol>
-						        <div class="carousel-inner">
-						          <div class="item ca-item active">
-						          	<img src="images/monitor_0.png" alt="">
-						          </div>
-						          <div class="item ca-item">
-						          	<img src="images/monitor_1.png" alt="">
-						          </div>
-						          <div class="item ca-item">
-						          	<img src="images/monitor_2.png" alt="">
-						          </div>
-						        </div>
-						        <a data-slide="prev" href="#carousel-monitor-captions" class="left carousel-control">
-						          <span class="glyphicon glyphicon-circle-arrow-left"></span>
-						        </a>
-						        <a data-slide="next" href="#carousel-monitor-captions" class="right carousel-control">
-						          <span class="glyphicon glyphicon-circle-arrow-right"></span>
-						        </a>
-						    </div>
-					        </div>
-					        <div class="modal-footer text-left clearfix">
-					        	<p><b>项目描述：</b>个人项目。该网站与一位艺术系学生共同完成，作为他毕设演示的一部分。网站页面由该生设计，由本人开发实现！
-					        	</p>
-					        	<a target="_blank" href="monitor/index.html" class="btn btn-primary pull-right">访问该站</a>
-					        </div>
-					      </div><!-- /.modal-content -->
-					    </div><!-- /.modal-dialog -->
+							<div class="modal-dialog">
+							  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									  <h4 class="modal-title">X-monitor</h4>
+									</div>
+									<div class="modal-body">
+										<div class="carousel slide" id="carousel-monitor-captions">
+										<ol class="carousel-indicators">
+										  <li class="active" data-slide-to="0" data-target="#carousel-monitor-captions"></li>
+										  <li data-slide-to="1" data-target="#carousel-monitor-captions"></li>
+										  <li data-slide-to="2" data-target="#carousel-monitor-captions"></li>
+										</ol>
+										<div class="carousel-inner">
+										  <div class="item ca-item active">
+										  	<img src="images/monitor_0.png" alt="">
+										  </div>
+										  <div class="item ca-item">
+										  	<img src="images/monitor_1.png" alt="">
+										  </div>
+										  <div class="item ca-item">
+										  	<img src="images/monitor_2.png" alt="">
+										  </div>
+										</div>
+										<a data-slide="prev" href="#carousel-monitor-captions" class="left carousel-control">
+										  <span class="glyphicon glyphicon-circle-arrow-left"></span>
+										</a>
+										<a data-slide="next" href="#carousel-monitor-captions" class="right carousel-control">
+										  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+										</a>
+								</div>
+									</div>
+									<div class="modal-footer text-left clearfix">
+										<p><b>项目描述：</b>个人项目。该网站与一位艺术系学生共同完成，作为他毕设演示的一部分。网站页面由该生设计，由本人开发实现！
+										</p>
+										<a target="_blank" href="monitor/index.html" class="btn btn-primary pull-right">访问该站</a>
+									</div>
+							  </div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
 					  </div><!-- /.modal -->
 				</div>
-				<div class="col-lg-6">
+				<div class="col-6 col-lg-6">
 					<div class="product_thum">
-						<img src="images/irica_thum_s.png" alt="">
+						<img src="images/irica_thum_s.png" alt="" width="100%">
 						<a class="product_mask" href="#modal_irica" data-toggle="modal" data-target="#modal_irica">
 							<span class="glyphicon glyphicon-eye-open"></span>
 						</a>
 					</div>
 					<div class="modal fade" id="modal_irica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					    <div class="modal-dialog">
-					      <div class="modal-content">
-					        <div class="modal-header">
-					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					          <h4 class="modal-title">新闻收集与分析系统</h4>
-					        </div>
-					        <div class="modal-body">
-					        	<div class="carousel slide" id="carousel-irica-captions">
-							        <ol class="carousel-indicators">
-							          <li class="active" data-slide-to="0" data-target="#carousel-irica-captions"></li>
-							          <li data-slide-to="1" data-target="#carousel-irica-captions"></li>
-							          <li data-slide-to="2" data-target="#carousel-irica-captions"></li>
-							          <li data-slide-to="3" data-target="#carousel-irica-captions"></li>
-							        </ol>
-							        <div class="carousel-inner">
-							          <div class="item ca-item active">
-							          	<img src="images/irica_0.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/irica_1.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/irica_2.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/irica_3.png" alt="">
-							          </div>
-							        </div>
-							        <a data-slide="prev" href="#carousel-irica-captions" class="left carousel-control">
-							          <span class="glyphicon glyphicon-circle-arrow-left"></span>
-							        </a>
-							        <a data-slide="next" href="#carousel-irica-captions" class="right carousel-control">
-							          <span class="glyphicon glyphicon-circle-arrow-right"></span>
-							        </a>
-							    </div>
-					        </div>
-					        <div class="modal-footer text-left">
-					          <p>
-					          	<b>项目描述：</b>实验室项目。用于收集与分析与政治军事相关的新闻报道的系统。系统爬取国内外部分重要网站的新闻资源，采用自然语言处理技术对新闻文本进行分析。（部队项目，外部不可访问。）
-					          </p>
-					          <p>
-					          	<b>本人工作：</b>1）搭建系统，负责前端页面设计与开发。2）借助  GATE、Stanford NER、ICTCLAS 等自然语言处理工具完成中英语种的文本分类、事件抽取任务。3）使用 Google Map 呈现全球热点新闻。4）扩展  jwysiwyg 插件，实现类似文本编辑器的文本标注工具。
-					          </p>
-					        </div>
-					      </div><!-- /.modal-content -->
-					    </div><!-- /.modal-dialog -->
+							<div class="modal-dialog">
+							  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									  <h4 class="modal-title">新闻收集与分析系统</h4>
+									</div>
+									<div class="modal-body">
+										<div class="carousel slide" id="carousel-irica-captions">
+											<ol class="carousel-indicators">
+											  <li class="active" data-slide-to="0" data-target="#carousel-irica-captions"></li>
+											  <li data-slide-to="1" data-target="#carousel-irica-captions"></li>
+											  <li data-slide-to="2" data-target="#carousel-irica-captions"></li>
+											  <li data-slide-to="3" data-target="#carousel-irica-captions"></li>
+											</ol>
+											<div class="carousel-inner">
+											  <div class="item ca-item active">
+											  	<img src="images/irica_0.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/irica_1.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/irica_2.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/irica_3.png" alt="">
+											  </div>
+											</div>
+											<a data-slide="prev" href="#carousel-irica-captions" class="left carousel-control">
+											  <span class="glyphicon glyphicon-circle-arrow-left"></span>
+											</a>
+											<a data-slide="next" href="#carousel-irica-captions" class="right carousel-control">
+											  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+											</a>
+									</div>
+									</div>
+									<div class="modal-footer text-left">
+									  <p>
+									  	<b>项目描述：</b>实验室项目。用于收集与分析与政治军事相关的新闻报道的系统。系统爬取国内外部分重要网站的新闻资源，采用自然语言处理技术对新闻文本进行分析。（部队项目，外部不可访问。）
+									  </p>
+									  <p>
+									  	<b>本人工作：</b>1）搭建系统，负责前端页面设计与开发。2）借助  GATE、Stanford NER、ICTCLAS 等自然语言处理工具完成中英语种的文本分类、事件抽取任务。3）使用 Google Map 呈现全球热点新闻。4）扩展  jwysiwyg 插件，实现类似文本编辑器的文本标注工具。
+									  </p>
+									</div>
+							  </div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
 					  </div>
 				</div>
 			</div>
 			<div class="row show-grid">
-				<div class="col-lg-6">
+				<div class="col-6 col-lg-6">
 					<div class="product_thum">
-						<img src="images/tran_thum.jpg" alt="">
+						<img src="images/tran_thum.jpg" alt="" width="100%">
 						<a class="product_mask" href="#modal_tran" data-toggle="modal" data-target="#modal_tran">
 							<span class="glyphicon glyphicon-eye-open"></span>
 						</a>
 					</div>
 					<div class="modal fade" id="modal_tran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					    <div class="modal-dialog">
-					      <div class="modal-content">
-					        <div class="modal-header">
-					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					          <h4 class="modal-title">实时信息监控系统</h4>
-					        </div>
-					        <div class="modal-body">
-					        	<div class="carousel slide" id="carousel-tran-captions">
-							        <ol class="carousel-indicators">
-							          <li class="active" data-slide-to="0" data-target="#carousel-tran-captions"></li>
-							          <li data-slide-to="1" data-target="#carousel-tran-captions"></li>
-							          <li data-slide-to="2" data-target="#carousel-tran-captions"></li>
-							          <li data-slide-to="3" data-target="#carousel-tran-captions"></li>
-							        </ol>
-							        <div class="carousel-inner">
-							          <div class="item ca-item active">
-							          	<img src="images/tran_0.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/tran_1.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/tran_2.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/tran_3.png" alt="">
-							          </div>
-							        </div>
-							        <a data-slide="prev" href="#carousel-tran-captions" class="left carousel-control">
-							          <span class="glyphicon glyphicon-circle-arrow-left"></span>
-							        </a>
-							        <a data-slide="next" href="#carousel-tran-captions" class="right carousel-control">
-							          <span class="glyphicon glyphicon-circle-arrow-right"></span>
-							        </a>
-							    </div>
-					        </div>
-					        <div class="modal-footer text-left">
-					          <p>
-					          	<b>项目描述：</b>个人项目。用于实时监控指定交通路段的流量、控制和诱导信息的监控系统。系统基于Python实现，使用Django作为Web框架，数据库使用 Oracle。（该系统非校园网无法访问。）
-					          </p>
-					          <p>
-					          	<b>本人工作：</b>1）搭建系统，开发所有系统功能。2）使用 Google Earth 呈现交通路段信息。3）使用 HTML5 图表插件 RGraph 呈现交通仿真结果数据。
-					          </p>
-					        </div>
-					      </div><!-- /.modal-content -->
-					    </div><!-- /.modal-dialog -->
+							<div class="modal-dialog">
+							  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									  <h4 class="modal-title">实时信息监控系统</h4>
+									</div>
+									<div class="modal-body">
+										<div class="carousel slide" id="carousel-tran-captions">
+											<ol class="carousel-indicators">
+											  <li class="active" data-slide-to="0" data-target="#carousel-tran-captions"></li>
+											  <li data-slide-to="1" data-target="#carousel-tran-captions"></li>
+											  <li data-slide-to="2" data-target="#carousel-tran-captions"></li>
+											  <li data-slide-to="3" data-target="#carousel-tran-captions"></li>
+											</ol>
+											<div class="carousel-inner">
+											  <div class="item ca-item active">
+											  	<img src="images/tran_0.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/tran_1.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/tran_2.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/tran_3.png" alt="">
+											  </div>
+											</div>
+											<a data-slide="prev" href="#carousel-tran-captions" class="left carousel-control">
+											  <span class="glyphicon glyphicon-circle-arrow-left"></span>
+											</a>
+											<a data-slide="next" href="#carousel-tran-captions" class="right carousel-control">
+											  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+											</a>
+									</div>
+									</div>
+									<div class="modal-footer text-left">
+									  <p>
+									  	<b>项目描述：</b>个人项目。用于实时监控指定交通路段的流量、控制和诱导信息的监控系统。系统基于Python实现，使用Django作为Web框架，数据库使用 Oracle。（该系统非校园网无法访问。）
+									  </p>
+									  <p>
+									  	<b>本人工作：</b>1）搭建系统，开发所有系统功能。2）使用 Google Earth 呈现交通路段信息。3）使用 HTML5 图表插件 RGraph 呈现交通仿真结果数据。
+									  </p>
+									</div>
+							  </div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
 					  </div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-6 col-lg-6">
 					<div class="product_thum">
-						<img src="images/gm_thum.png" alt="">
+						<img src="images/gm_thum.png" alt="" width="100%">
 						<a class="product_mask" href="#modal_gm" data-toggle="modal" data-target="#modal_gm">
 							<span class="glyphicon glyphicon-eye-open"></span>
 						</a>
 					</div>
 					<div class="modal fade" id="modal_gm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					    <div class="modal-dialog">
-					      <div class="modal-content">
-					        <div class="modal-header">
-					          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					          <h4 class="modal-title">General Manufacturability Checker for Casting Components</h4>
-					        </div>
-					        <div class="modal-body">
-					        	<div class="carousel slide" id="carousel-gm-captions">
-							        <ol class="carousel-indicators">
-							          <li class="active" data-slide-to="0" data-target="#carousel-gm-captions"></li>
-							          <li data-slide-to="1" data-target="#carousel-gm-captions"></li>
-							          <li data-slide-to="2" data-target="#carousel-gm-captions"></li>
-							        </ol>
-							        <div class="carousel-inner">
-							          <div class="item ca-item active">
-							          	<img src="images/gm_0.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/gm_1.png" alt="">
-							          </div>
-							          <div class="item ca-item">
-							          	<img src="images/gm_2.png" alt="">
-							          </div>
-							        </div>
-							        <a data-slide="prev" href="#carousel-gm-captions" class="left carousel-control">
-							          <span class="glyphicon glyphicon-circle-arrow-left"></span>
-							        </a>
-							        <a data-slide="next" href="#carousel-gm-captions" class="right carousel-control">
-							          <span class="glyphicon glyphicon-circle-arrow-right"></span>
-							        </a>
-							    </div>
-					        </div>
-					        <div class="modal-footer text-left">
-					          <p>
-					          	<b>项目描述：</b>实验室项目。与某汽车公司合作项目的分析报告（网页版）。由本人独立完成。
-					          </p>
-					        </div>
-					      </div><!-- /.modal-content -->
-					    </div><!-- /.modal-dialog -->
+							<div class="modal-dialog">
+							  <div class="modal-content">
+									<div class="modal-header">
+									  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									  <h4 class="modal-title">General Manufacturability Checker for Casting Components</h4>
+									</div>
+									<div class="modal-body">
+										<div class="carousel slide" id="carousel-gm-captions">
+											<ol class="carousel-indicators">
+											  <li class="active" data-slide-to="0" data-target="#carousel-gm-captions"></li>
+											  <li data-slide-to="1" data-target="#carousel-gm-captions"></li>
+											  <li data-slide-to="2" data-target="#carousel-gm-captions"></li>
+											</ol>
+											<div class="carousel-inner">
+											  <div class="item ca-item active">
+											  	<img src="images/gm_0.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/gm_1.png" alt="">
+											  </div>
+											  <div class="item ca-item">
+											  	<img src="images/gm_2.png" alt="">
+											  </div>
+											</div>
+											<a data-slide="prev" href="#carousel-gm-captions" class="left carousel-control">
+											  <span class="glyphicon glyphicon-circle-arrow-left"></span>
+											</a>
+											<a data-slide="next" href="#carousel-gm-captions" class="right carousel-control">
+											  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+											</a>
+									</div>
+									</div>
+									<div class="modal-footer text-left">
+									  <p>
+									  	<b>项目描述：</b>实验室项目。与某汽车公司合作项目的分析报告（网页版）。由本人独立完成。
+									  </p>
+									</div>
+							  </div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
 					  </div>
 				</div>
 			</div>
@@ -317,7 +330,8 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.scrollto.js" type="text/javascript" charset="utf-8"></script>
 <script>
 	// for modal show and hide

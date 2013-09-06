@@ -123,18 +123,24 @@ h2 small {
 	transition: all 1s;
 	-webkit-transition: all 1s;
 	position: absolute;
-	width: 390px;
-	height: 260px;
-	line-height: 260px;
-	font-size: 128px;
+	width: 100%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	background-color: rgba(0,0,0, 0.0);
-	color: #0A0A0A;
 	text-decoration: none;
 	opacity: 0;
 	display: block;
 	text-align: center;
+}
+
+.product_thum .product_mask span{
+	position: absolute;
+	font-size: 128px;
+	color: #0A0A0A;
+	left: 50%;
+	top: 50%;
+	margin: -85px 0 0 -64px;
 }
 
 .product_thum:hover .product_mask {
@@ -144,4 +150,27 @@ h2 small {
 
 .show-grid {
 	margin-bottom: 20px;
+}
+.sr-only {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.navbar {
+	padding-left: 0;
+}
+
+.navbar-brand {
+	margin-left: -5px;
+}
+
+.navbar-nav {
+	margin-top: 0;
+	margin-bottom: 0;
 }
